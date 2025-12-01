@@ -9,4 +9,4 @@ COPY . .
 
 ENV PORT=8080
 
-CMD ["gunicorn", "-b", "0.0.0.0:8080", "main:random_roll"]
+CMD ["functions-framework", "--target", "random_roll", "--port", "8080"]
